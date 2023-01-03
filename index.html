@@ -25,9 +25,15 @@
                         <span class="accent">Web</span><span class="nav-logo-black">Studio</span>
                     </a>
                     <ul class="nav-list list-style">
-                        <li class="item"><a class="nav-list-link nav-list-active" href="./index.html">Студія</a></li>
-                        <li class="item"><a class="nav-list-link" href="./portfolio.html">Портфоліо</a></li>
-                        <li class="item"><a class="nav-list-link" href="">Контакти</a></li>
+                        <li class="item">
+                            <a class="nav-list-link nav-list-active" href="./index.html">Студія</a>
+                        </li>
+                        <li class="item">
+                            <a class="nav-list-link" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="item">
+                            <a class="nav-list-link" href="">Контакти</a>
+                        </li>
                     </ul>
             </nav>
             <ul class="list-style header-list">
@@ -56,9 +62,16 @@
             <section class="section-hero section-image">
                 <div class="container">
                     <h1 class="hero">Ефективні рішення для вашого бізнесу</h1>
-                    <button class="button" type="button">
-                    Замовити послугу
-                    </button>
+                    <button class="button" type="button" data-modal-open>Замовити послугу</button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit architecto vitae eos ipsam porro officiis dicta provident quia iste minus a sit voluptatibus laboriosam, numquam magni non aperiam voluptate ea?
+                                Blanditiis, sapiente harum quidem reprehenderit quo consequuntur molestiae, qui optio quisquam architecto fuga iste aspernatur voluptates aliquam eligendi nulla maxime aut omnis? Modi veritatis ea labore iste debitis! Porro, placeat.
+                            </p>
+                            <button data-modal-close>Закрити</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         <!--section 2-->
@@ -384,5 +397,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
     </body>
 </html>
